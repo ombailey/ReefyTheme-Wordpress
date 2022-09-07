@@ -68,13 +68,21 @@ Tags: responsive, personal portfolio, blog
   color: #fff;
 }
 
+.mobile-layout nav {
+  display: none;
+}
+
+.mobile-layout #mobile-screen {
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) and (min-width: 450px) {
   .name {
     padding-left: 0;
   }
   .name img {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
   }
   .name h1 {
     font-size: 2rem;
@@ -90,71 +98,69 @@ Tags: responsive, personal portfolio, blog
   }
 }
 
-.mobile-header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  height: 7vh;
-  width: 100vw;
-}
-
-.mobile-menu {
-  width: 50vw;
-}
-
-.mobile-menu i {
-  float: right;
-  padding-right: 5px;
-}
-
-.mobile-name {
-  font-family: "Qwitcher Grypen", sans-serif;
-  font-size: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50vw;
-}
-
-.mobile-name img {
-  width: 44px;
-  height: 40px;
-}
-
-#mobile-screen {
-  display: none;
-}
-
-#mobile-logo {
-  padding-top: 12px;
-}
-
-.mobile-nav-menu {
-  padding-left: 0;
-  font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  padding-top: 13px;
-  text-transform: uppercase;
-}
-
-.mobile-nav-menu ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.mobile-nav-menu li a {
-  padding: 0 5px;
-  text-decoration: none;
-  color: #fff;
+@media screen and (max-width: 450px) {
+  #regular-screen {
+    display: none;
+  }
+  .mobile-layout nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobile-header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    height: 7vh;
+    width: 100vw;
+  }
+  .mobile-menu {
+    width: 50vw;
+  }
+  .mobile-menu i {
+    float: right;
+    padding-right: 5px;
+  }
+  .mobile-name {
+    font-family: "Qwitcher Grypen", sans-serif;
+    font-size: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vw;
+  }
+  .mobile-name img {
+    width: 44px;
+    height: 40px;
+  }
+  #mobile-logo {
+    padding-top: 12px;
+  }
+  .mobile-nav-menu {
+    padding-left: 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    padding-top: 13px;
+    text-transform: uppercase;
+  }
+  .mobile-nav-menu ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobile-nav-menu li a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 .blog_layout {
@@ -178,7 +184,7 @@ Tags: responsive, personal portfolio, blog
         -ms-flex-direction: column;
             flex-direction: column;
     height: 87.5vh;
-    margin-top: 5.5vh;
+    margin-top: 6vh;
   }
   .blog {
     height: 65vh;
@@ -439,7 +445,7 @@ Tags: responsive, personal portfolio, blog
 
 @media only screen and (max-width: 1024px) and (min-width: 450px) {
   .home_photo {
-    margin-top: 6vh;
+    margin-top: 7vh;
   }
   .home_photo img {
     height: 75vh;

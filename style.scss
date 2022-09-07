@@ -74,14 +74,24 @@ $socialfooter_height: 5vh;
   }
 }
 
+.mobile-layout {
+  nav {
+    display: none;
+  }
+
+  #mobile-screen {
+    display: none;
+  }
+}
+
 // Tablet
 
 @media only screen and (max-width: 1024px) and (min-width: 450px) {
   .name {
     padding-left: 0;
     img {
-      width: 75px;
-      height: 75px;
+      width: 65px;
+      height: 65px;
     }
 
     h1 {
@@ -101,55 +111,62 @@ $socialfooter_height: 5vh;
 }
 
 // Mobile Navigation Design
-
-.mobile-header-nav {
-  display: flex;
-  justify-content: left;
-  height: $nav_height;
-  width: 100vw;
-}
-.mobile-menu {
-  width: 50vw;
-  i {
-    float: right;
-    padding-right: 5px;
+@media screen and (max-width: 450px) {
+  #regular-screen {
+    display: none;
   }
-}
-.mobile-name {
-  font-family: "Qwitcher Grypen", sans-serif;
-  font-size: 24px;
-  display: flex;
-  width: 50vw;
-  img {
-    width: 44px;
-    height: 40px;
+
+  .mobile-layout {
+    nav {
+      display: flex;
+    }
   }
-}
 
-#mobile-screen {
-  display: none;
-}
-
-#mobile-logo {
-  padding-top: 12px;
-}
-
-.mobile-nav-menu {
-  padding-left: 0;
-  font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  padding-top: 13px;
-  text-transform: uppercase;
-  ul {
-    list-style-type: none;
+  .mobile-header-nav {
     display: flex;
-    padding-top: 5px;
-    justify-content: center;
+    justify-content: left;
+    height: $nav_height;
+    width: 100vw;
   }
-  li a {
-    padding: 0 5px;
-    text-decoration: none;
-    color: #fff;
+  .mobile-menu {
+    width: 50vw;
+    i {
+      float: right;
+      padding-right: 5px;
+    }
+  }
+  .mobile-name {
+    font-family: "Qwitcher Grypen", sans-serif;
+    font-size: 24px;
+    display: flex;
+    width: 50vw;
+    img {
+      width: 44px;
+      height: 40px;
+    }
+  }
+
+  #mobile-logo {
+    padding-top: 12px;
+  }
+
+  .mobile-nav-menu {
+    padding-left: 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    padding-top: 13px;
+    text-transform: uppercase;
+    ul {
+      list-style-type: none;
+      display: flex;
+      padding-top: 5px;
+      justify-content: center;
+    }
+    li a {
+      padding: 0 5px;
+      text-decoration: none;
+      color: #fff;
+    }
   }
 }
 
@@ -195,7 +212,7 @@ $socialfooter_height: 5vh;
   .blog_layout {
     flex-direction: column;
     height: 87.5vh;
-    margin-top: 5.5vh;
+    margin-top: 6vh;
   }
 
   .blog {
@@ -493,7 +510,7 @@ $socialfooter_height: 5vh;
 // Tablet
 @media only screen and (max-width: 1024px) and (min-width: 450px) {
   .home_photo {
-    margin-top: 6vh;
+    margin-top: 7vh;
     img {
       height: 75vh;
     }

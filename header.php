@@ -34,45 +34,47 @@
     )
   ) ?>
 </nav>
-<nav id="mobile-header-nav">
-  <div class="mobile-name">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Sharif-Bailey-Logo.png" alt="Logo of hands" class="Reef_logo" />
-    <h1>Reef Bailey</h1>
-  </div>
-  <div class="mobile-menu">
-    <i id="mobile-logo" class="fa-solid fa-bars" href="javascript:void(0)" onclick="mobileToggle()"></i>
-  </div>
-</nav>
-<?php wp_nav_menu(
-  array(
-    "theme_location" => "top-menu",
-    "menu_class" => "3",
-    "fallback_cb" => "false",
-    "menu_id" => "1",
-    "container_id" => "mobile-screen",
-    "container_class" => "mobile-nav-menu",
-  )
-) ?>
+
+<div class="mobile-layout">
+  <nav id="mobile-header-nav">
+    <div class="mobile-name">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Sharif-Bailey-Logo.png" alt="Logo of hands" class="Reef_logo" />
+      <h1>Reef Bailey</h1>
+    </div>
+    <div class="mobile-menu">
+      <i id="mobile-logo" class="fa-solid fa-bars" onclick="mobileToggle()"></i>
+    </div>
+  </nav>
+  <?php wp_nav_menu(
+    array(
+      "theme_location" => "top-menu",
+      "menu_class" => "3",
+      "fallback_cb" => "false",
+      "menu_id" => "1",
+      "container_id" => "mobile-screen",
+      "container_class" => "mobile-nav-menu",
+    )
+  ) ?>
 </div>
 
 <script>
-  let x = screen.width;
-  let mobile = document.getElementById("mobile-header-nav");
-  let regularScreen = document.getElementById("regular-screen")
-  if (x <= 450) {
-    mobile.style.display = "flex";
-    regularScreen.style.display = "none";
-  } else {
-    mobile.style.display = "none";
-    regularScreen.style.display = "flex";
-  }
+  // let x = screen.width;
+  // let mobile = document.getElementById("mobile-header-nav");
+  // let regularScreen = document.getElementById("regular-screen")
+  // if (x <= 450) {
+  //   mobile.style.display = "flex";
+  //   regularScreen.style.display = "none";
+  // } else {
+  //   mobile.style.display = "none";
+  //   regularScreen.style.display = "flex";
+  // }
 
   function mobileToggle() {
     let menu = document.getElementById("mobile-screen");
-    if (menu.style.display === "none") {
-      menu.style.display = "block";
-    } else {
+    if (menu.style.display === "block") {
       menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
     }
   }
 </script>
