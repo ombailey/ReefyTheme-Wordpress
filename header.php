@@ -58,17 +58,6 @@
 </div>
 
 <script>
-  // let x = screen.width;
-  // let mobile = document.getElementById("mobile-header-nav");
-  // let regularScreen = document.getElementById("regular-screen")
-  // if (x <= 450) {
-  //   mobile.style.display = "flex";
-  //   regularScreen.style.display = "none";
-  // } else {
-  //   mobile.style.display = "none";
-  //   regularScreen.style.display = "flex";
-  // }
-
   function mobileToggle() {
     let menu = document.getElementById("mobile-screen");
     if (menu.style.display === "block") {

@@ -170,30 +170,6 @@ $socialfooter_height: 5vh;
   }
 }
 
-// @media only screen and (max-width: 450px) {
-//   .name {
-//     padding-left: 0;
-//     padding-top: 13px;
-//     h1 {
-//       font-size: 1.2rem;
-//     }
-//     img {
-//       width: 44px;
-//       height: 40px;
-//     }
-//   }
-
-//   .nav-menu {
-//     padding-top: 13px;
-//     padding-left: 0;
-//     margin-left: 5vw;
-//     li a {
-//       font-size: 0.8rem;
-//       padding: 0 5px;
-//     }
-//   }
-// }
-
 // 3. Blog CSS
 .blog_layout {
   display: flex;
@@ -527,8 +503,8 @@ $socialfooter_height: 5vh;
 @media only screen and (max-width: 450px) {
   .home_photo {
     img {
-      width: 400px;
-      height: 400px;
+      width: 100vw;
+      height: auto;
     }
   }
 }

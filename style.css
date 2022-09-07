@@ -460,8 +460,8 @@ Tags: responsive, personal portfolio, blog
 
 @media only screen and (max-width: 450px) {
   .home_photo img {
-    width: 400px;
-    height: 400px;
+    width: 100vw;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
