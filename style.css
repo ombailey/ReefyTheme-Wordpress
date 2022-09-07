@@ -1,0 +1,461 @@
+/*
+Theme Name: Reefy
+Author: Omar Bailey
+Author URI: https://ombailey.github.io/Personal-Portfolio/
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Description: Dark, Minimal theme for Wordpress
+Version: 1.0.3
+Tags: responsive, personal portfolio, blog
+*/
+@import url("https://fonts.googleapis.com/css2?family=Allan&family=Indie+Flower&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  height: 7vh;
+}
+
+.name {
+  font-family: "Qwitcher Grypen", sans-serif;
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10vw;
+}
+
+.name img {
+  width: auto;
+}
+
+.name h1 {
+  padding-top: 10px;
+}
+
+.nav-menu {
+  padding-left: 20vw;
+  font-family: "Work Sans", sans-serif;
+  font-size: 26px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5px;
+}
+
+.nav-menu li a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 450px) {
+  .name {
+    padding-left: 0;
+  }
+  .name img {
+    width: 75px;
+    height: 75px;
+  }
+  .name h1 {
+    font-size: 2rem;
+    padding-top: 12px;
+  }
+  .nav-menu {
+    padding-left: 0;
+    padding-top: 15px;
+    margin-left: 5vw;
+  }
+  .nav-menu li a {
+    font-size: 1.3rem;
+  }
+}
+
+.mobile-header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  height: 7vh;
+  width: 100vw;
+}
+
+.mobile-menu {
+  width: 50vw;
+}
+
+.mobile-menu i {
+  float: right;
+  padding-right: 5px;
+}
+
+.mobile-name {
+  font-family: "Qwitcher Grypen", sans-serif;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50vw;
+}
+
+.mobile-name img {
+  width: 44px;
+  height: 40px;
+}
+
+#mobile-screen {
+  display: none;
+}
+
+#mobile-logo {
+  padding-top: 12px;
+}
+
+.mobile-nav-menu {
+  padding-left: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  padding-top: 13px;
+  text-transform: uppercase;
+}
+
+.mobile-nav-menu ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile-nav-menu li a {
+  padding: 0 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.blog_layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh-var($nav_height));
+}
+
+.blog {
+  width: 80vw;
+  height: 93vh;
+  border: 1px white solid;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 450px) {
+  .blog_layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 87.5vh;
+    margin-top: 5.5vh;
+  }
+  .blog {
+    height: 65vh;
+    width: auto;
+  }
+}
+
+@media screen and (max-height: 1200px) and (min-height: 1000px) {
+  .blog_layout {
+    margin-top: 0;
+    height: 93vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .blog_layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 95vh;
+  }
+  .blog {
+    height: 75vh;
+    width: auto;
+  }
+}
+
+.page_posts {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 450px) {
+  .page_posts {
+    padding: 0 5vw;
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-height: 1200px) and (min-height: 1000px) {
+  .page_posts {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .page_posts {
+    padding: 0 5vw;
+    font-size: 16px;
+  }
+}
+
+.sidebar {
+  height: 93vh;
+  width: 20vw;
+}
+
+.tweets {
+  width: 20vw;
+  height: 93vh;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 450px) {
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 35vh;
+    width: 100vw;
+    overflow: scroll;
+  }
+  .tweets {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 23vh;
+    width: 100vw;
+    overflow: scroll;
+  }
+  .tweets {
+    width: 100vw;
+  }
+}
+
+.meta {
+  font-size: 16px;
+}
+
+.post_body {
+  font-family: "Indie Flower", sans-serif;
+  padding: 0 10vw;
+}
+
+.post_body h3 {
+  font-size: 48px;
+  font-family: "Allan Family";
+}
+
+.post_body p {
+  margin-top: 1vh;
+  font-size: 30px;
+}
+
+.thumbnail {
+  width: 400px;
+  height: 400px;
+}
+
+.author {
+  margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 450px) {
+  .meta {
+    font-size: 12px;
+  }
+  .thumbnail {
+    width: 250px;
+    height: 250px;
+  }
+  .post_body h3 {
+    font-size: 22px;
+  }
+  .post_body p {
+    font-size: 18px;
+  }
+}
+
+.archive-post_body {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 26px;
+}
+
+.archive-page_meta {
+  padding: 1vh 10vw;
+}
+
+.archive-page_meta h3 {
+  font-size: 48px;
+  font-family: "Allan", cursive;
+  padding-bottom: 1vh;
+}
+
+.archive-meta {
+  font-size: 16px;
+}
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.archive-thumbnail {
+  height: 200px;
+  width: 200px;
+}
+
+.more {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 450px) {
+  .archive-thumbnail {
+    height: 175px;
+    width: 175px;
+  }
+  .media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .archive-page_meta h3 {
+    font-size: 28px;
+  }
+  .archive-page_meta .archive-post_body {
+    font-size: 18px;
+  }
+  .archive-page_meta .archive-meta {
+    font-size: 12px;
+  }
+  .more {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-height: 1200px) and (min-height: 1000px) {
+  .archive-page_meta h3 {
+    font-size: 40px;
+  }
+  .archive-page_meta .archive-post_body {
+    font-size: 20px;
+  }
+  .archive-page_meta .archive-meta {
+    font-size: 18px;
+  }
+  .more {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .archive-thumbnail {
+    height: 175px;
+    width: 175px;
+  }
+  .media {
+    display: block;
+  }
+  .archive-page_meta h3 {
+    font-size: 24px;
+  }
+  .archive-page_meta .archive-post_body {
+    font-size: 18px;
+  }
+  .archive-page_meta .archive-meta {
+    font-size: 12px;
+  }
+  .more {
+    font-size: 12px;
+  }
+}
+
+.social_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5vh;
+  padding-top: 1.5vh;
+}
+
+.social_footer div {
+  padding: 0 10px;
+  margin: 0 5px;
+  height: 4vh;
+}
+
+.fa-brands {
+  -webkit-transform: scale(150%);
+          transform: scale(150%);
+}
+
+.home_photo img {
+  width: 100vw;
+  height: calc(100vh - 7vh - 5vh);
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 450px) {
+  .home_photo {
+    margin-top: 6vh;
+  }
+  .home_photo img {
+    height: 75vh;
+  }
+}
+
+@media screen and (max-height: 1200px) and (min-height: 1000px) {
+  .home_photo {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home_photo img {
+    width: 400px;
+    height: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
